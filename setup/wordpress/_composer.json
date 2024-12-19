@@ -1,0 +1,32 @@
+{
+  "name": "jmucak/wp-docker-azure",
+  "type": "project",
+  "repositories": [
+    {
+      "type":"composer",
+      "url":"https://connect.advancedcustomfields.com"
+    },
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "wpackagist-plugin/contact-form-7": "^6.0.1",
+    "wpackagist-plugin/windows-azure-storage": "^4.5.1",
+    "wpengine/advanced-custom-fields-pro": "^6.0"
+  },
+  "extra": {
+    "installer-paths": {
+      "wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+    },
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  }
+}
